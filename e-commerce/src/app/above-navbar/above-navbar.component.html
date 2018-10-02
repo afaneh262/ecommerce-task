@@ -1,0 +1,11 @@
+<nav class="navbar bg-white">
+  <div class="container">
+    <a href="" class="navbar-brand">CAMARO</a>
+    <ul class="list-inline">
+      <li class="list-inline-item" *ngFor="let link of links">
+        <a [href]="link.href" [class]="link.class"></a>
+        <span>{{link.numOfNotifications}}</span>
+      </li>
+      </ul>
+  </div>
+</nav>

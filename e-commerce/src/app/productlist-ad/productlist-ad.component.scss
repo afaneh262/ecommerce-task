@@ -1,0 +1,15 @@
+@import "var";
+.container{
+
+  margin-bottom: $space;
+  padding: 0;
+  .d-none{
+    padding-right: 15px;
+    padding-left: 0;
+  }
+  img{
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+}
+

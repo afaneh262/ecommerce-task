@@ -1,0 +1,67 @@
+<div class="bg-white cart">
+
+  <h3 class="text-center">Shopping Cart</h3>
+  <div class="container">
+    <div class="row" style="align-items: flex-start">
+      <div class="col-sm-12 col-md-8">
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>price</th>
+              <th>quantity</th>
+              <th>total</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let p of products">
+              <td class="product-name">
+                <img [src]="p.product.image" alt="" class="float-left">
+                <p>{{p.product.name}}</p>
+                <p class="font-weight-bold">{{'$'+p.product.price}}</p>
+                <p><span>&times;</span></p>
+              </td>
+              <td class="align-middle">{{'$'+p.product.price}}</td>
+              <td class="align-middle">
+                <div class="quantity text-center">
+                  <span class="decrement" style="margin-right: 0.2rem">&minus;</span>
+                  <span style="margin-right: 0.2rem">{{p.qunatity}}</span>
+                  <span class="increment">&#43;</span>
+                </div>
+              </td>
+              <td class="align-middle">{{'$'+toInt(p.product.price)*p.qunatity}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="summary col-sm-12 col-md-4">
+        <h4 style="padding:0.5rem">summary</h4>
+        <hr/>
+        <div class="d-flex justify-content-between" style="padding:0.5rem">
+          <p>subtotal</p>
+          <p>{{'$'+getTotalPrice()}}</p>
+        </div>
+        <hr/>
+        <div class="d-flex justify-content-between" style="padding:0.5rem">
+          <p>Shipping</p>
+          <p>$5</p>
+        </div>
+        <hr/>
+        <div class="d-flex justify-content-between" style="padding:0.5rem">
+          <p>Order total</p>
+          <p>{{'$'+(getTotalPrice()+5)}}</p>
+        </div>
+        <div class="text-center">
+          <button class="btn text-white">GO TO CHECKOUT</button>
+          <p class="btn-tip">Checkout with multiple addresses</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>

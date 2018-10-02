@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <div class="container">
+
+    <div class="nav">
+      <li class="nav-item d-none d-md-block" *ngFor="let link of links">
+        <a class="nav-link"  [routerLink]="'home'">{{link | uppercase}}</a>
+      </li>
+      <li class="nav-item dropdown d-sm-block d-md-none">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="fa fa-bars"></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a *ngFor="let link of links" class="dropdown-item" [routerLink]="'home'">{{link|uppercase}}</a>
+        </div>
+      </li>
+
+    </div>
+  </div>
+</nav>
+
+

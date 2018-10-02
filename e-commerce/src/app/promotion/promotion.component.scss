@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "var";
+@import "app_functions";
+@import "app_mixins";
+.container{
+  padding: 0;
+  margin-bottom: $space;
+}
+.row{
+  color: white;
+  font-size: 90%;
+  text-align: center;
+  padding: 0 15px;
+  div:first-child{
+    background-color: clr("dgray");
+    padding: 0.8rem;
+
+    @include respond-below(lg){
+      font-size: 80%;
+    }
+  }
+  a{
+    background-color: clr("dred");
+    padding: 0.8rem;
+    position: relative;
+    color: white;
+    &::after{
+      position: absolute;
+      content:"";
+      border-width: 3rem 3rem 0  0;
+      border-style: solid;
+      border-color:  clr("dgray") transparent  transparent  transparent;
+      top:0;
+      left: 0;
+      @include respond-below(md){
+        border-width: 0;
+      }
+    }
+    &:hover{
+      text-decoration: none;
+      background-color: darken(clr("dred"),10%);
+    }
+  }
+}

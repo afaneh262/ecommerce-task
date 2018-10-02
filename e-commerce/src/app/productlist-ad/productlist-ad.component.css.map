@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGE,cAAG;EACD,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI",
+"sources": ["productlist-ad.component.scss"],
+"names": [],
+"file": "productlist-ad.component.css"
+}

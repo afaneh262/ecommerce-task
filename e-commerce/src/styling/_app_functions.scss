@@ -1,0 +1,3 @@
+@function clr($clr){
+  @return map_get($app-colors,$clr);
+}

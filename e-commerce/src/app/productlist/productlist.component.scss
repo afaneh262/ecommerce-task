@@ -1,0 +1,23 @@
+@import "var";
+.container{
+  background-color: white;
+
+  margin-top: $space;
+
+
+  .row{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 0;
+    padding-left: 0;
+    ec-product{
+      padding: 0;
+    }
+  }
+}
+
+.remove-padding{
+  padding-left: 0;
+  padding-right: 0;
+}
+

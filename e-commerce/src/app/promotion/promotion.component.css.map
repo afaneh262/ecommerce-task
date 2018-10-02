@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAI;EACF,KAAK,EAAE,KAAK;EACZ,oBAAe;IACb,gBAAgB,EAAE,IAAI;IACtB,OAAO,EAAE,MAAM;IACf,YAAY,EAAE,IAAI;EAEpB,mBAAc;IACZ,gBAAgB,EAAE,GAAG;IACrB,OAAO,EAAE,MAAM",
+"sources": ["promotion.component.scss"],
+"names": [],
+"file": "promotion.component.css"
+}
