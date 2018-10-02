@@ -1,0 +1,12 @@
+<div class="container" [ngClass]="{'remove-padding': removeContainerPadding}">
+  <ec-product-header [title]="title"></ec-product-header>
+  <div class="row">
+    <ec-product
+      *ngFor="let p of products; let i =index; let last = last" [product]="p"
+      class="col-lg-{{columnLg}} col-md-{{columMd}} col-sm-12"
+      [ngClass]="{'d-none':i>numOfProducts-1}"
+      [productShape]="productShape"
+      [removeBorder]="(i+1)%(12/columnLg) === 0"
+    ></ec-product>
+  </div>
+</div>

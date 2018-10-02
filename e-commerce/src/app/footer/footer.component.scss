@@ -1,0 +1,68 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "var";
+@import "app_functions";
+@import "app_mixins";
+
+footer{
+  background-color: clr("dgray");
+  .contacts{
+    padding: 1rem 0 0 0;
+
+    .title{
+      margin-bottom: 0.4rem;
+      color:darken(clr("lgray"),50%);
+      font-size: 0.8rem;
+    }
+    .social{
+
+      padding-top: 1.5rem;
+      @include respond-below(md){
+        text-align: left !important;
+      }
+      a{
+        color: white;
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        transition: all 0.15s;
+        &:last-child{
+          margin-right: 0;
+        }
+        &:hover{
+          text-decoration: none;
+          color:clr("dred");
+
+        }
+        @include respond-below(lg){
+          font-size: 1.2rem;
+        }
+
+
+      }
+
+    }
+  }
+}
+
+
+.hr{
+  height: 0.12rem;
+  background-color: clr("lgray");
+}
+.fast-links{
+  p{
+    color: darken(clr("lgray"),50%);
+    font-size: 0.8rem;
+  }
+  a{
+    display: block;
+    color: darken(clr("lgray"),30%);
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    &:hover{
+      text-decoration: none;
+      color:clr("dred");
+
+    }
+  }
+}

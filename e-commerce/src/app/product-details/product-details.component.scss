@@ -1,0 +1,67 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "var";
+@import "app_functions";
+
+.container{
+  padding-top: $space;
+  .img-thumbnail{
+    padding: 0.15rem;
+    margin-bottom: 0.1rem;
+
+
+    img{
+      max-width: 100%;
+      cursor:pointer;
+    }
+  }
+  .displayed-img{
+    width: 100%;
+  }
+  .details{
+    padding-top: $space;
+    .header{
+      color: darken(clr("lgray"),20%);
+      font-size: 0.9rem;
+    }
+    .price{
+      color: clr("dred");
+    }
+    .description{
+      font-size: 0.9rem;
+      color: darken(clr("lgray"),70%);
+    }
+    .availability{
+      font-size: 0.9rem;
+      margin-top: 0.5*$space;
+      color: darken(clr("lgray"),50%);
+    }
+
+  }
+
+  .add-products{
+    display: block;
+    border-radius: 0.25rem;
+    border: 1px solid $secondary;
+    height: 100%;
+    line-height: 2.2rem;
+    >span{
+      margin-right: 0.3rem;
+    }
+    .increment,.decrement{
+      cursor: pointer;
+      color:darken(clr("lgray"),20%);
+      font-size: 0.9rem;
+      &:active{
+        color:clr("dred");
+      }
+    }
+  }
+  .add-to-cart{
+    background-color: black;
+    border-radius: 0;
+    margin-top: 0.5*$space;
+  }
+
+
+}

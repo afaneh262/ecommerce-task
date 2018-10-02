@@ -1,0 +1,15 @@
+<div class="prod-ver" *ngIf="productShape==='vertical'" (click)="goToProductDetails(product.id)">
+  <figure class="fig-ver"><img [src]="product.image" alt="product"></figure>
+  <div class="p-name">{{product.name}}</div>
+  <div class="p-price">{{product.price}}</div>
+</div>
+
+<div class="row prod-hor" *ngIf="productShape==='horizantal'" [ngClass]="{'remove-border':removeBorder}" (click)="goToProductDetails(product.id)">
+    <div class="col-md-5 col-sm-12 col-lg-5">
+      <img [src]="product.image"  alt="product">
+    </div>
+    <div class="col-md-7 col-sm-12 col-lg-7">
+      <div class="p-name">{{product.name}}</div>
+      <div class="p-price">{{product.price}}</div>
+    </div>
+</div>

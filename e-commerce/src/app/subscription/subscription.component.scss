@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "var";
+@import "app_functions";
+@import "app_mixins";
+p{
+  color: darken(clr("lgray"),40%);
+}
+.row{
+  width: 50%;
+  margin: auto;
+  @include respond-below(lg){
+    width: 100%;
+  }
+
+
+  .btn{
+    background-color: clr("dred");
+    color:white;
+    border-radius:0;
+    @include respond-below(md){
+      margin-top: 1rem;
+    }
+  }
+}

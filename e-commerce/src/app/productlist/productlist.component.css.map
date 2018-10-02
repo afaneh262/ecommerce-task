@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,UAAU;EACR,gBAAgB,EAAE,KAAK;EACvB,UAAU,EAAE,IAAI;EAEhB,eAAI;IACH,WAAW,EAAE,IAAI;IAChB,cAAc,EAAE,IAAI;IACpB,0BAAU;MACR,OAAO,EAAE,CAAC",
+"sources": ["productlist.component.scss"],
+"names": [],
+"file": "productlist.component.css"
+}

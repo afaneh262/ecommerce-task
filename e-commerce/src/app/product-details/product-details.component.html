@@ -1,0 +1,65 @@
+<div class="bg-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-1 col-md-2 col-sm-12">
+        <div class="row">
+          <figure class="img-thumbnail col-md-12 col-sm-3">
+            <img [src]="product.image" alt="">
+          </figure>
+          <figure class="img-thumbnail col-md-12 col-sm-3">
+            <img [src]="product.image" alt="">
+          </figure>
+          <figure class="img-thumbnail col-md-12 col-sm-3">
+            <img [src]="product.image" alt="">
+          </figure>
+          <figure class="img-thumbnail col-md-12 col-sm-3">
+            <img [src]="product.image" alt="">
+          </figure>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-10 col-sm-12 ">
+        <img [src]="product.image" alt="" class="displayed-img">
+      </div>
+      <div class="col-lg-5 col-md-12 details offset-lg-1">
+        <p class="header">Home / {{product.name}}</p>
+        <h3>{{product.name}}</h3>
+        <p class="price font-weight-bold">{{product.price}}</p>
+        <div class="description">
+          <p>
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+          </p>
+          <p>
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+            text text text text text
+          </p>
+        </div>
+        <div class="row buttons">
+          <div class="col-8" style="padding-right:0">
+            <div class="add-products text-center">
+              <span class="decrement" (click)="decrementNumberOfReservedProducts()">&minus;</span>
+              <span>{{quantity}}</span>
+              <span class="increment" (click)="incrementNumberOfReservedProducts()">&#43;</span>
+            </div>
+          </div>
+          <div class="col-2" style="padding-left: 5px;padding-right: 0"><button class="btn btn-outline-secondary btn-block "><span class="fa fa-heart"></span></button></div>
+          <div class="col-2" style="padding-left: 5px"><button class="btn btn-outline-secondary btn-block "><span class="fa fa-share"></span></button></div>
+        </div>
+        <button class="btn btn-block add-to-cart text-white" (click)="addToCart()">Add to cart</button>
+        <p class="availability">{{product.name}} is available to buy in increments of 1</p>
+      </div>
+    </div>
+  </div>
+</div>

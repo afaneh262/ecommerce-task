@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,GAAG;EACD,MAAM,EAAE,MAAM;EACd,gBAAgB,EAAE,YAAY;EAC9B,OAAG;IACD,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,gBAAgB,EAAE,WAAW",
+"sources": ["product-header.component.scss"],
+"names": [],
+"file": "product-header.component.css"
+}

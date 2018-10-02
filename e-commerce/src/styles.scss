@@ -1,0 +1,8 @@
+@import "var";
+@import "app_functions";
+$body-bg:clr("lgray");
+$body-color:clr("dgray");
+@import "~bootstrap/scss/bootstrap";
+body{
+  font-family: Arial;
+}

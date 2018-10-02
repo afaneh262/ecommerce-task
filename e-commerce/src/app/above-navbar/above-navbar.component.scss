@@ -1,0 +1,40 @@
+@import "var";
+@import "app_functions";
+
+.container{
+  padding: 0;
+  .navbar-brand{
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color:clr("dgray");
+  }
+  a{
+    color: clr("dgray");
+    transition: all 0.2s;
+    &:hover{
+      text-decoration: none;
+      color:lighten(clr("dred"),10%);
+    }
+  }
+  ul{
+    margin: 0;
+
+    li{
+      position: relative;
+      margin: 0;
+      margin-left: 0.5rem;
+    }
+  }
+
+  span{
+    position: absolute;
+    font-size: 0.6rem;
+    background-color: clr("dred");
+    width: 1rem;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    right: -0.1rem;
+  }
+
+}

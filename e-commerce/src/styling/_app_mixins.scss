@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@mixin respond-above($breakpoint){
+  $breakpoint-value: map_get($grid-breakpoints,$breakpoint);
+  @media screen and (min-width: $breakpoint-value){
+      @content;
+  }
+}
+@mixin respond-below($breakpoint){
+  $breakpoint-value: map_get($grid-breakpoints,$breakpoint);
+  @media screen and (max-width: $breakpoint-value){
+    @content;
+  }
+}
+@mixin respond-between($first-breakpoint,$second-breakpoint){
+  $first-breakpoint-value: map_get($grid-breakpoints,$first-breakpoint);
+  $second-breakpoint-value: map_get($grid-breakpoints,$second-breakpoint);
+  @media screen and (min-width: $first-breakpoint-value) and (max-width: $second-breakpoint-value){
+    @content;
+  }
+}
+
+
